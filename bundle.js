@@ -76,6 +76,8 @@ try {
     console.error("outside if: " + e);
 }
 
-a.forEach(a => a());
+a.forEach(function (a) {
+  return a();
+});
 arrows();
 func();
